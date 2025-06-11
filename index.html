@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="Icon"
+      href="./images/Extra/logo-symbol.png"
+      type="image/png"
+      sizes="any"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <!-- HEADER SECTION  -->
+
+    <header>
+      <div class="header-container">
+        <div class="brand-logo">
+          <img src="./images/Extra/logo-symbol.png" alt="logo" />
+          <h1>Brand</h1>
+        </div>
+        <form action="#" class="search-form">
+          <input type="text" name="search" placeholder="Search" />
+          <div class="categories">
+            <select>
+              <option value="all">All Categories</option>
+              <option value="electronics">Electronics</option>
+              <option value="fashion">Fashion</option>
+              <option value="home">Home & Garden</option>
+              <option value="toys">Toys & Games</option>
+              <option value="sports">Sports & Outdoors</option>
+            </select>
+          </div>
+          <button type="submit">Search</button>
+        </form>
+        <nav class="actions">
+          <div class="action-item">
+            <a href="#" class="profile-icon">
+              <img src="./images/icons/my-profile.png" alt="Profile" />
+              Profile
+            </a>
+          </div>
+          <div class="action-item">
+            <a href="#" class="messages-icon">
+              <img src="./images/icons/my-messages.png" alt="Messages" />
+              Message
+            </a>
+          </div>
+          <div class="action-item">
+            <a href="#" class="orders-icon">
+              <img src="./images/icons/my-orders.png" alt="Orders" />Orders
+            </a>
+          </div>
+          <div class="action-item">
+            <a href="#" class="cart-icon">
+              <img src="./images/icons/my-cart.png" alt="Cart" />My Cart
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- NAV SECTION  -->
+
+    <nav class="nav-links">
+      <div class="left">
+        <ul>
+          <li>
+            <div
+              class="dropdown-wrapper-cat"
+              role="combobox"
+              aria-haspopup="listbox"
+              aria-expanded="false"
+              aria-controls="categories-list"
+            >
+              <a href="#" id="categories-toggle">
+                <img src="./images/icons/hamburger-menu.png" alt="" /> All
+                Categories
+              </a>
+              <ul
+                class="dropdown-list"
+                role="listbox"
+                id="categories-list"
+                tabindex="-1"
+              >
+                <li role="option">
+                  <button type="button">Electronics</button>
+                </li>
+                <li role="option">
+                  <button type="button">Fashion & Apparel</button>
+                </li>
+                <li role="option">
+                  <button type="button">Home & Garden</button>
+                </li>
+                <li role="option">
+                  <button type="button">Sports & Outdoors</button>
+                </li>
+                <li role="option">
+                  <button type="button">Toys & Hobbies</button>
+                </li>
+                <li role="option">
+                  <button type="button">Books & Media</button>
+                </li>
+                <li role="option">
+                  <button type="button">Health & Beauty</button>
+                </li>
+                <li role="option"><button type="button">Automotive</button></li>
+                <li role="option">
+                  <button type="button">Groceries & Gourmet Food</button>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Hot offers</a></li>
+          <li><a href="#">Gift boxes</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Menu item</a></li>
+          <li>
+            <div
+              class="dropdown-wrapper-cat"
+              role="combobox"
+              aria-haspopup="listbox"
+              aria-expanded="false"
+              aria-controls="help-list"
+            >
+              <a href="#" id="help-toggle"
+                >Help <img src="./images/icons/down.png" alt=""
+              /></a>
+              <ul
+                class="dropdown-list"
+                role="listbox"
+                id="help-list"
+                tabindex="-1"
+              >
+                <li role="option"><button type="button">FAQ</button></li>
+                <li role="option">
+                  <button type="button">Contact Support</button>
+                </li>
+                <li role="option">
+                  <button type="button">Return Policy</button>
+                </li>
+                <li role="option">
+                  <button type="button">Shipping Information</button>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="right-section">
+        <!-- Language & Currency Dropdown -->
+        <div
+          class="dropdown-wrapper"
+          id="lang-currency-dropdown"
+          role="combobox"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+          aria-controls="lang-currency-list"
+          tabindex="0"
+          aria-label="Select language and currency"
+        >
+          <div
+            class="dropdown-content"
+            id="lang-currency-label"
+            aria-live="polite"
+            tabindex="0"
+            aria-haspopup="listbox"
+          >
+            <img
+              src="https://flagcdn.com/w20/us.png"
+              alt="United States flag"
+              class="flags"
+            />
+            <span class="label-text">English, USD</span>
+          </div>
+          <svg
+            class="arrow-down"
+            viewBox="0 0 20 20"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z"
+            />
+          </svg>
+
+          <ul
+            class="dropdown-list"
+            role="listbox"
+            id="lang-currency-list"
+            tabindex="-1"
+            aria-label="Select language and currency"
+          >
+            <li role="option">
+              <button
+                type="button"
+                data-label="English, USD"
+                data-flag="https://flagcdn.com/w20/us.png"
+                aria-selected="true"
+              >
+                <img
+                  class="flags"
+                  src="https://flagcdn.com/w20/us.png"
+                  alt="United States flag"
+                />
+                English, USD
+              </button>
+            </li>
+            <li role="option">
+              <button
+                type="button"
+                data-label="French, EUR"
+                data-flag="https://flagcdn.com/w20/fr.png"
+                alt="France flag"
+                aria-selected="false"
+              >
+                <img
+                  class="flags"
+                  src="https://flagcdn.com/w20/fr.png"
+                  alt="France flag"
+                />
+                French, EUR
+              </button>
+            </li>
+            <li role="option">
+              <button
+                type="button"
+                data-label="German, EUR"
+                data-flag="https://flagcdn.com/w20/de.png"
+                alt="Germany flag"
+                aria-selected="false"
+              >
+                <img
+                  class="flags"
+                  src="https://flagcdn.com/w20/de.png"
+                  alt="Germany flag"
+                />
+                German, EUR
+              </button>
+            </li>
+            <li role="option">
+              <button
+                type="button"
+                data-label="Japanese, JPY"
+                data-flag="https://flagcdn.com/w20/jp.png"
+                alt="Japan flag"
+                aria-selected="false"
+              >
+                <img
+                  class="flags"
+                  src="https://flagcdn.com/w20/jp.png"
+                  alt="Japan flag"
+                />
+                Japanese, JPY
+              </button>
+            </li>
+            <li role="option">
+              <button
+                type="button"
+                data-label="Brazilian Portuguese, BRL"
+                data-flag="https://flagcdn.com/w20/br.png"
+                alt="Brazil flag"
+                aria-selected="false"
+              >
+                <img
+                  class="flags"
+                  src="https://flagcdn.com/w20/br.png"
+                  alt="Brazil flag"
+                />
+                Brazilian Portuguese, BRL
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Ship To Dropdown -->
+        <div
+          class="dropdown-wrapper"
+          id="shipto-dropdown"
+          role="combobox"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+          aria-controls="shipto-list"
+          tabindex="0"
+          aria-label="Select shipping country"
+        >
+          <div
+            class="dropdown-content"
+            id="shipto-label"
+            aria-live="polite"
+            tabindex="0"
+            aria-haspopup="listbox"
+          >
+            Ship to
+            <img
+              class="flags"
+              src="https://flagcdn.com/w20/de.png"
+              alt="Germany flag"
+              style="margin-left: 0.5rem"
+            />
+          </div>
+          <svg
+            class="arrow-down"
+            viewBox="0 0 20 20"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z"
+            />
+          </svg>
+
+          <ul
+            class="dropdown-list"
+            role="listbox"
+            id="shipto-list"
+            tabindex="-1"
+            aria-label="Select shipping country"
+          >
+            <li role="option">
+              <button
+                type="button"
+                data-country="Germany"
+                data-flag="https://flagcdn.com/w20/de.png"
+                aria-selected="true"
+              >
+                <img
+                  class="flags"
+                  src="https://flagcdn.com/w20/de.png"
+                  alt="Germany flag"
+                />
+                Germany
+              </button>
+            </li>
+            <li role="option">
+              <button
+                type="button"
+                data-country="United States"
+                data-flag="https://flagcdn.com/w20/us.png"
+                aria-selected="false"
+              >
+                <img
+                  class="flags"
+                  src="https://flagcdn.com/w20/us.png"
+                  alt="United States flag"
+                />
+                United States
+              </button>
+            </li>
+            <li role="option">
+              <button
+                type="button"
+                data-country="France"
+                data-flag="https://flagcdn.com/w20/fr.png"
+                aria-selected="false"
+              >
+                <img
+                  class="flags"
+                  src="https://flagcdn.com/w20/fr.png"
+                  alt="France flag"
+                />
+                France
+              </button>
+            </li>
+            <li role="option">
+              <button
+                type="button"
+                data-country="Japan"
+                data-flag="https://flagcdn.com/w20/jp.png"
+                aria-selected="false"
+              >
+                <img
+                  class="flags"
+                  src="https://flagcdn.com/w20/jp.png"
+                  alt="Japan flag"
+                />
+                Japan
+              </button>
+            </li>
+            <li role="option">
+              <button
+                type="button"
+                data-country="Brazil"
+                data-flag="https://flagcdn.com/w20/br.png"
+                aria-selected="false"
+              >
+                <img
+                  class="flags"
+                  src="https://flagcdn.com/w20/br.png"
+                  alt="Brazil flag"
+                />
+                Brazil
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT SECTION -->
+
+    <main>
+      <div class="hero-section">
+        <div class="left">
+          <ul class="list-unstyled d-flex flex-column align-items-start gap-0">
+            <li class="black fw-bolder">Automobiles</li>
+            <li>Clothes and wear</li>
+            <li>Home interiors</li>
+            <li>Computer and tech</li>
+            <li>Tools, equipments</li>
+            <li>Sports and outdoor</li>
+            <li>Animal and pets</li>
+            <li>Machinery tools</li>
+            <li>More category</li>
+          </ul>
+        </div>
+        <div class="middle">
+          <span>
+            <h3>
+              Latest trending
+              <b class="fw-bolder">Electronic items</b>
+            </h3>
+            <button class="btn btn-primary">Learn More</button>
+          </span>
+        </div>
+        <div class="right">
+          <div class="login-wrapper common-wrapper">
+            <section>
+              <img src="./images/Extra/Avatar.png" alt="" />
+              <p>Hi, User let’s get stated</p>
+            </section>
+            <button class="btn btn-primary p-2">Join now</button>
+            <button class="btn btn-primary white-bg text-center p-2">
+              Log in
+            </button>
+          </div>
+          <div class="offer-wrapper common-wrapper">
+            <span>
+              <p>Get US $10 off with a new supplier</p>
+            </span>
+          </div>
+          <div class="other-wrapper common-wrapper">
+            <span>
+              <p>Send quotes with supplier preferences</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- SALE SECTION  -->
+
+    <div class="sale-section">
+      <div class="timer-count-down">
+        <article>
+          <p class="fw-bold">Deals and Offers</p>
+          <p style="color: rgba(139, 150, 165, 1)">Hygiene equipments</p>
+          <div class="mt-2">
+            <section>
+              <span>04</span>
+              <p>Days</p>
+            </section>
+            <section>
+              <span>13</span>
+              <p>Hours</p>
+            </section>
+            <section>
+              <span>34</span>
+              <p>Min</p>
+            </section>
+            <section>
+              <span>56</span>
+              <p>Sec</p>
+            </section>
+          </div>
+        </article>
+      </div>
+      <div class="deals-offers">
+        <div class="deals">
+          <article>
+            <img src="./images/tech/8.jpg" alt="" />
+          </article>
+          <article>
+            <span>Smart Watches</span>
+            <p>-25%</p>
+          </article>
+        </div>
+        <div class="deals">
+          <article>
+            <img src="./images/tech/7.jpg" alt="" />
+          </article>
+          <article>
+            <span>Laptop</span>
+            <p>-25%</p>
+          </article>
+        </div>
+        <div class="deals">
+          <article>
+            <img src="./images/tech/6.jpg" alt="" />
+          </article>
+          <article>
+            <span>GoPro Camera</span>
+            <p>-40%</p>
+          </article>
+        </div>
+        <div class="deals">
+          <article>
+            <img src="./images/tech/5.jpg" alt="" />
+          </article>
+          <article>
+            <span>Headphones</span>
+            <p>-25%</p>
+          </article>
+        </div>
+        <div class="deals">
+          <article>
+            <img src="./images/tech/3.jpg" alt="" />
+          </article>
+          <article>
+            <span>Canon Cameras</span>
+            <p>-25%</p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOME PORDUCTS SECTIONS -->
+
+    <div class="home-products-section">
+      <div class="home-banner">
+        <article>
+          <span>
+            <h3>Home and Outdoor</h3>
+          </span>
+          <button class="btn btn-primary white-bg">Source now</button>
+        </article>
+      </div>
+      <div class="home-products">
+        <div class="product">
+          <span>
+            <p class="product-name">Soft Chairs</p>
+            <p class="product-price">From USD 19</p> </span
+          ><span><img src="./images/interior/1.jpg" alt="" /></span>
+        </div>
+        <div class="product">
+          <span>
+            <p class="product-name">Lamp Light</p>
+            <p class="product-price">From USD 19</p> </span
+          ><span><img src="./images/interior/image 94.png" alt="" /></span>
+        </div>
+        <div class="product">
+          <span>
+            <p class="product-name">Kitchen Dishes</p>
+            <p class="product-price">From USD 19</p> </span
+          ><span><img src="./images/interior/image 93.png" alt="" /></span>
+        </div>
+        <div class="product">
+          <span>
+            <p class="product-name">Smart Watches</p>
+            <p class="product-price">From USD 19</p> </span
+          ><span><img src="./images/tech/8.jpg" alt="" /></span>
+        </div>
+
+        <div class="product">
+          <span>
+            <p class="product-name">Kitchen Mixers</p>
+            <p class="product-price">From USD 100</p> </span
+          ><span><img src="./images/interior/image 88.png" alt="" /></span>
+        </div>
+        <div class="product">
+          <span>
+            <p class="product-name">Blenders</p>
+            <p class="product-price">From USD 39</p> </span
+          ><span><img src="./images/interior/image 87.png" alt="" /></span>
+        </div>
+        <div class="product">
+          <span>
+            <p class="product-name">Home Appliance</p>
+            <p class="product-price">From USD 19</p> </span
+          ><span><img src="./images/interior/rasm.png" alt="" /></span>
+        </div>
+        <div class="product">
+          <span>
+            <p class="product-name">Coffee Maker</p>
+            <p class="product-price">From USD 10</p> </span
+          ><span><img src="./images/interior/image 89.png" alt="" /></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ELECTRONICS PRODUCTS SECTION  -->
+
+    <div class="home-products-section">
+      <div class="electronic-banner">
+        <article>
+          <span>
+            <h3>Consumer electronics and gadgets</h3>
+          </span>
+          <button class="btn btn-primary white-bg">Source now</button>
+        </article>
+      </div>
+      <div class="home-products">
+        <div class="product">
+          <span>
+            <p class="product-name">Smart watches</p>
+            <p class="product-price">From USD 19</p> </span
+          ><span><img src="./images/tech/8.jpg" alt="" /></span>
+        </div>
+        <div class="product">
+          <span>
+            <p class="product-name">Cameras</p>
+            <p class="product-price">From USD 19</p> </span
+          ><span><img src="./images/tech/6.jpg" alt="" /></span>
+        </div>
+        <div class="product">
+          <span>
+            <p class="product-name">Headphones</p>
+            <p class="product-price">From USD 19</p> </span
+          ><span><img src="./images/tech/image 86.png" alt="" /></span>
+        </div>
+        <div class="product">
+          <span>
+            <p class="product-name">Electric kattle</p>
+            <p class="product-price">From USD 19</p> </span
+          ><span><img src="./images/tech/10.jpg" alt="" /></span>
+        </div>
+
+        <div class="product">
+          <span>
+            <p class="product-name">Headphone set</p>
+            <p class="product-price">From USD 100</p> </span
+          ><span><img src="./images/tech/8.jpg" alt="" /></span>
+        </div>
+        <div class="product">
+          <span>
+            <p class="product-name">Laptops & PC</p>
+            <p class="product-price">From USD 39</p> </span
+          ><span><img src="./images/tech/image 34.png" alt="" /></span>
+        </div>
+        <div class="product">
+          <span>
+            <p class="product-name">Smartphones</p>
+            <p class="product-price">From USD 19</p> </span
+          ><span><img src="./images/tech/1.jpg" alt="" /></span>
+        </div>
+        <div class="product">
+          <span>
+            <p class="product-name">Smartphones</p>
+            <p class="product-price">From USD 10</p> </span
+          ><span><img src="./images/tech/image 33.png" alt="" /></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- INQUIRY SECTION  -->
+
+    <div class="inquiry-section-container">
+      <div class="inquiry-section">
+        <div class="tagline-container">
+          <div class="tagline">
+            <h2 class="fw-bold">
+              An easy way to send requests to all suppliers
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+          </div>
+        </div>
+        <div class="form-container">
+          <form class="inquiry-form" action="#">
+            <h2>Send quote to suppliers</h2>
+            <input type="text" placeholder="What item you need?" />
+            <textarea placeholder="Type more details..."></textarea>
+            <section>
+              <input type="number" placeholder="Quantity" />
+              <input type="number" placeholder="Pcs" />
+            </section>
+            <button class="btn btn-primary">Send inquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- RECOMMENDATION SECTION  -->
+
+    <div class="recommendation-section">
+      <h3>Recommended Items</h3>
+      <div class="items-container">
+        <div class="item">
+          <span
+            ><img src="./images/Layout/alibaba/cloth/Bitmap-1.png" alt=""
+          /></span>
+          <span class="item-details">
+            <p class="item-price">$10.30</p>
+            <p class="item-description">
+              T-shirts with multiple colors, for men
+            </p>
+          </span>
+        </div>
+        <div class="item">
+          <span
+            ><img src="./images/Layout/alibaba/cloth/2 1.png" alt=""
+          /></span>
+          <span class="item-details">
+            <p class="item-price">$10.30</p>
+            <p class="item-description">Brown winter coatmedium size</p>
+          </span>
+        </div>
+        <div class="item">
+          <span
+            ><img src="./images/Layout/alibaba/cloth/image 30.png" alt=""
+          /></span>
+          <span class="item-details">
+            <p class="item-price">$12.30</p>
+            <p class="item-description">BlueCoat medium size for men</p>
+          </span>
+        </div>
+        <div class="item">
+          <span
+            ><img src="./images/Layout/alibaba/cloth/image 24.png" alt=""
+          /></span>
+          <span class="item-details">
+            <p class="item-price">$34.00</p>
+            <p class="item-description">Blue wallet for menleather metarfial</p>
+          </span>
+        </div>
+        <div class="item">
+          <span
+            ><img src="./images/Layout/alibaba/cloth/image 26.png" alt=""
+          /></span>
+          <span class="item-details">
+            <p class="item-price">$99.00</p>
+            <p class="item-description">Jeans bag for travelfor men</p>
+          </span>
+        </div>
+        <div class="item">
+          <span
+            ><img src="./images/Layout/alibaba/cloth/Bitmap.png" alt=""
+          /></span>
+          <span class="item-details">
+            <p class="item-price">$9.99</p>
+            <p class="item-description">Jeans shorts for menblue color</p>
+          </span>
+        </div>
+        <div class="item">
+          <span
+            ><img src="./images/Layout/alibaba/tech/image 86.png" alt=""
+          /></span>
+          <span class="item-details">
+            <p class="item-price">$9.99</p>
+            <p class="item-description">Headset for gamingwith mic</p>
+          </span>
+        </div>
+        <div class="item">
+          <span
+            ><img src="./images/Layout/alibaba/cloth/image 26-1.png" alt=""
+          /></span>
+          <span class="item-details">
+            <p class="item-price">$10.30</p>
+            <p class="item-description">Jeans bag for travelfor men</p>
+          </span>
+        </div>
+        <div class="item">
+          <span
+            ><img src="./images/Layout/alibaba/interior/image 90.png" alt=""
+          /></span>
+          <span class="item-details">
+            <p class="item-price">$10.30</p>
+            <p class="item-description">Keeper for things</p>
+          </span>
+        </div>
+        <div class="item">
+          <span
+            ><img src="./images/Layout/alibaba/tech/image 85.png" alt=""
+          /></span>
+          <span class="item-details">
+            <p class="item-price">$89.30</p>
+            <p class="item-description">Electric kattle for office</p>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXTRA SERVICES SECTION -->
+    <div class="extra-services-container">
+      <h3>Our Extra Services</h3>
+      <div class="extra-services">
+        <div class="service-card">
+          <span class="img-container"
+            ><img src="./images/extraServices/image 108.png" alt=""
+          /></span>
+          <span class="service-details">
+            <p class="service-description">Source from Industry Hubs</p> </span
+          ><span class="icon-container"
+            ><img src="./images/icons/Icon/control/search.png" alt=""
+          /></span>
+        </div>
+        <div class="service-card">
+          <span class="img-container"
+            ><img src="images/extraServices/image 104.png" alt=""
+          /></span>
+          <span class="service-details">
+            <p class="service-description">Customize Your Products</p> </span
+          ><span class="icon-container"
+            ><img src="./images/icons/Icon/control/inventory_2.png" alt=""
+          /></span>
+        </div>
+        <div class="service-card">
+          <span class="img-container"
+            ><img src="images/extraServices/image 106.png" alt=""
+          /></span>
+          <span class="service-details">
+            <p class="service-description">
+              Fast, reliable shipping by ocean or air
+            </p> </span
+          ><span class="icon-container"
+            ><img src="./images/icons/Icon/control/send.png" alt=""
+          /></span>
+        </div>
+        <div class="service-card">
+          <span class="img-container"
+            ><img src="images/extraServices/image 107.png" alt=""
+          /></span>
+          <span class="service-details">
+            <p class="service-description">
+              Product monitoring and inspection
+            </p> </span
+          ><span class="icon-container"
+            ><img src="./images/icons/Icon/control/security.png" alt=""
+          /></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUPPLIER REGION SECTION -->
+    <div class="region-section-container">
+      <h3>Suppliers by region</h3>
+      <div class="region-section">
+        <div class="country">
+          <span><img src="./images/flags/Property 1=AE.png" alt="" /></span>
+          <span class="country-info">
+            <p class="country-name">Arabic Emirates</p>
+            <p class="country-link">shopname.ae</p>
+          </span>
+        </div>
+        <div class="country">
+          <span><img src="./images/flags/Property 1=AU.png" alt="" /></span>
+          <span class="country-info">
+            <p class="country-name">Australia</p>
+            <p class="country-link">shopname.ae</p>
+          </span>
+        </div>
+        <div class="country">
+          <span><img src="./images/flags/Property 1=US.png" alt="" /></span>
+          <span class="country-info">
+            <p class="country-name">United States</p>
+            <p class="country-link">shopname.ae</p>
+          </span>
+        </div>
+        <div class="country">
+          <span><img src="./images/flags/Property 1=RU.png" alt="" /></span>
+          <span class="country-info">
+            <p class="country-name">Russia</p>
+            <p class="country-link">shopname.ae</p>
+          </span>
+        </div>
+        <div class="country">
+          <span><img src="./images/flags/Property 1=DE.png" alt="" /></span>
+          <span class="country-info">
+            <p class="country-name">Denmark</p>
+            <p class="country-link">Denmark.com.dk</p>
+          </span>
+        </div>
+        <div class="country">
+          <span><img src="./images/flags/Property 1=CN.png" alt="" /></span>
+          <span class="country-info">
+            <p class="country-name">China</p>
+            <p class="country-link">China.com.ck</p>
+          </span>
+        </div>
+        <div class="country">
+          <span><img src="./images/flags/Property 1=AE.png" alt="" /></span>
+          <span class="country-info">
+            <p class="country-name">Arabic Emirates</p>
+            <p class="country-link">shopname.ae</p>
+          </span>
+        </div>
+        <div class="country">
+          <span><img src="./images/flags/Property 1=CN.png" alt="" /></span>
+          <span class="country-info">
+            <p class="country-name">China</p>
+            <p class="country-link">shopname.ae</p>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEWSLETTER SECTION  -->
+
+    <div class="newletter-section">
+      <article
+        class="d-flex flex-column justify-content-center align-items-center"
+      >
+        <h3>Subscribe on our newsletter</h3>
+        <p>
+          Get daily news on upcoming offers from many suppliers all over the
+          world
+        </p>
+      </article>
+      <article>
+        <input type="email" placeholder="Email" />
+        <button class="btn btn-primary">Subscribe</button>
+      </article>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <div
+        class="footer-container d-flex flex-wrap justify-content-between align-items-center border-bottom"
+      >
+        <div class="col">
+          <section class="d-flex align-items-center">
+            <img src="./images/Extra/logo-symbol.png" alt="brand-logo" />
+            <h1 class="d-inline-block text-center" style="color: #8cb7f5">
+              Brand
+            </h1>
+          </section>
+          <section>
+            <p>
+              Best information about the company gies here but now lorem ipsum
+              is
+            </p>
+          </section>
+          <section>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="./images/social/facebook.png" alt="social-links"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./images/social/twitter.png" alt="social-links"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./images/social/linkedin.png" alt="social-links"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./images/social/insta.png" alt="social-links"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./images/social/youtube.png" alt="social-links"
+                /></a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="col">
+          <ul class="list-unstyled d-flex flex-column align-items-start gap-2">
+            <li class="black">About</li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Find Store</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul class="list-unstyled d-flex flex-column align-items-start gap-2">
+            <li class="black">Partnership</li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Find Store</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul class="list-unstyled d-flex flex-column align-items-start gap-2">
+            <li class="black">Information</li>
+            <li><a href="#">Help center</a></li>
+            <li><a href="#">Money Refund</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul class="list-unstyled d-flex flex-column align-items-start gap-2">
+            <li class="black">For users</li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">My orders</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul class="list-unstyled d-flex flex-column align-items-start">
+            <li class="black mb-">Get app</li>
+            <li><img src="./images/Misc/market-button.png" alt="" /></li>
+            <li><img src="./images/Misc/Group.png" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-down">
+        <span id="left">&copy; 2023 Ecommerce.</span>
+        <span id="right"
+          ><img src="./images/icons/up.png" alt="" /> English
+          <img class="flags" src="./images/flags/Property 1=US.png" alt="flag"
+        /></span>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
