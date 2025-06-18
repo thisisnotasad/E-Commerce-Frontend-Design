@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="Icon"
+      href="../images/Extra/logo-symbol.png"
+      type="image/png"
+      sizes="any"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/Links-style.css" />
+    <link rel="stylesheet" href="../css/products-list-view.css" />
+  </head>
+
+  <body>
+    <!-- HEADER SECTION  -->
+
+    <header>
+      <div class="header-container">
+        <div class="brand-logo">
+          <img src="../images/Extra/logo-symbol.png" alt="logo" />
+          <h1>Brand</h1>
+        </div>
+        <form action="#" class="search-form">
+          <input type="text" name="search" placeholder="Search" />
+          <div class="categories">
+            <select>
+              <option value="all">All Categories</option>
+              <option value="electronics">Electronics</option>
+              <option value="fashion">Fashion</option>
+              <option value="home">Home & Garden</option>
+              <option value="toys">Toys & Games</option>
+              <option value="sports">Sports & Outdoors</option>
+            </select>
+          </div>
+          <button type="submit">Search</button>
+        </form>
+        <nav class="actions">
+          <div class="action-item">
+            <a href="#" class="profile-icon">
+              <img src="../images/icons/my-profile.png" alt="Profile" />
+              Profile
+            </a>
+          </div>
+          <div class="action-item">
+            <a href="#" class="messages-icon">
+              <img src="../images/icons/my-messages.png" alt="Messages" />
+              Message
+            </a>
+          </div>
+          <div class="action-item">
+            <a href="#" class="orders-icon">
+              <img src="../images/icons/my-orders.png" alt="Orders" />Orders
+            </a>
+          </div>
+          <div class="action-item">
+            <a href="#" class="cart-icon">
+              <img src="../images/icons/my-cart.png" alt="Cart" />My Cart
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- NAVIGATION LIKNS  -->
+    <div>
+      <div class="nav">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-header"></div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="nav-menu">
+          <a href="../index.html">Home</a>
+          <a href="../pages/products-grid-view.html">Products</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+          <a href="#">More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAV SECTION  -->
+
+    <nav class="nav-links">
+      <div class="left">
+        <ul>
+          <li>
+            <div
+              class="dropdown-wrapper-cat"
+              role="combobox"
+              aria-haspopup="listbox"
+              aria-expanded="false"
+              aria-controls="categories-list"
+            >
+              <a href="#" id="categories-toggle">
+                <img src="../images/icons/hamburger-menu.png" alt /> All
+                Categories
+              </a>
+              <ul
+                class="dropdown-list"
+                role="listbox"
+                id="categories-list"
+                tabindex="-1"
+              >
+                <li role="option">
+                  <button type="button">Electronics</button>
+                </li>
+                <li role="option">
+                  <button type="button">Fashion & Apparel</button>
+                </li>
+                <li role="option">
+                  <button type="button">Home & Garden</button>
+                </li>
+                <li role="option">
+                  <button type="button">Sports & Outdoors</button>
+                </li>
+                <li role="option">
+                  <button type="button">Toys & Hobbies</button>
+                </li>
+                <li role="option">
+                  <button type="button">Books & Media</button>
+                </li>
+                <li role="option">
+                  <button type="button">Health & Beauty</button>
+                </li>
+                <li role="option"><button type="button">Automotive</button></li>
+                <li role="option">
+                  <button type="button">Groceries & Gourmet Food</button>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Hot offers</a></li>
+          <li><a href="#">Gift boxes</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Menu item</a></li>
+          <li>
+            <div
+              class="dropdown-wrapper-cat"
+              role="combobox"
+              aria-haspopup="listbox"
+              aria-expanded="false"
+              aria-controls="help-list"
+            >
+              <a href="#" id="help-toggle"
+                >Help <img src="../images/icons/down.png" alt
+              /></a>
+              <ul
+                class="dropdown-list"
+                role="listbox"
+                id="help-list"
+                tabindex="-1"
+              >
+                <li role="option"><button type="button">FAQ</button></li>
+                <li role="option">
+                  <button type="button">Contact Support</button>
+                </li>
+                <li role="option">
+                  <button type="button">Return Policy</button>
+                </li>
+                <li role="option">
+                  <button type="button">Shipping Information</button>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="right-section">
+        <!-- Language & Currency Dropdown -->
+        <div
+          class="dropdown-wrapper"
+          id="lang-currency-dropdown"
+          role="combobox"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+          aria-controls="lang-currency-list"
+          tabindex="0"
+          aria-label="Select language and currency"
+        >
+          <div
+            class="dropdown-content"
+            id="lang-currency-label"
+            aria-live="polite"
+            tabindex="0"
+            aria-haspopup="listbox"
+          >
+            <img
+              src="https://flagcdn.com/w20/us.png"
+              alt="United States flag"
+              class="flags"
+            />
+            <span class="label-text">English, USD</span>
+          </div>
+          <svg
+            class="arrow-down"
+            viewBox="0 0 20 20"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z"
+            />
+          </svg>
+
+          <ul
+            class="dropdown-list"
+            role="listbox"
+            id="lang-currency-list"
+            tabindex="-1"
+            aria-label="Select language and currency"
+          >
+            <li role="option">
+              <button
+                type="button"
+                data-label="English, USD"
+                data-flag="https://flagcdn.com/w20/us.png"
+                aria-selected="true"
+              >
+                <img
+                  class="flags"
+                  src="https://flagcdn.com/w20/us.png"
+                  alt="United States flag"
+                />
+                English, USD
+              </button>
+            </li>
+            <li role="option">
+              <button
+                type="button"
+                data-label="French, EUR"
+                data-flag="https://flagcdn.com/w20/fr.png"
+                alt="France flag"
+                aria-selected="false"
+              >
+                <img
+                  class="flags"
+                  src="https://flagcdn.com/w20/fr.png"
+                  alt="France flag"
+                />
+                French, EUR
+              </button>
+            </li>
+            <li role="option">
+              <button
+                type="button"
+                data-label="German, EUR"
+                data-flag="https://flagcdn.com/w20/de.png"
+                alt="Germany flag"
+                aria-selected="false"
+              >
+                <img
+                  class="flags"
+                  src="https://flagcdn.com/w20/de.png"
+                  alt="Germany flag"
+                />
+                German, EUR
+              </button>
+            </li>
+            <li role="option">
+              <button
+                type="button"
+                data-label="Japanese, JPY"
+                data-flag="https://flagcdn.com/w20/jp.png"
+                alt="Japan flag"
+                aria-selected="false"
+              >
+                <img
+                  class="flags"
+                  src="https://flagcdn.com/w20/jp.png"
+                  alt="Japan flag"
+                />
+                Japanese, JPY
+              </button>
+            </li>
+            <li role="option">
+              <button
+                type="button"
+                data-label="Brazilian Portuguese, BRL"
+                data-flag="https://flagcdn.com/w20/br.png"
+                alt="Brazil flag"
+                aria-selected="false"
+              >
+                <img
+                  class="flags"
+                  src="https://flagcdn.com/w20/br.png"
+                  alt="Brazil flag"
+                />
+                Brazilian Portuguese, BRL
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Ship To Dropdown -->
+        <div
+          class="dropdown-wrapper"
+          id="shipto-dropdown"
+          role="combobox"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+          aria-controls="shipto-list"
+          tabindex="0"
+          aria-label="Select shipping country"
+        >
+          <div
+            class="dropdown-content"
+            id="shipto-label"
+            aria-live="polite"
+            tabindex="0"
+            aria-haspopup="listbox"
+          >
+            Ship to
+            <img
+              class="flags"
+              src="https://flagcdn.com/w20/de.png"
+              alt="Germany flag"
+              style="margin-left: 0.5rem"
+            />
+          </div>
+          <svg
+            class="arrow-down"
+            viewBox="0 0 20 20"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z"
+            />
+          </svg>
+
+          <ul
+            class="dropdown-list"
+            role="listbox"
+            id="shipto-list"
+            tabindex="-1"
+            aria-label="Select shipping country"
+          >
+            <li role="option">
+              <button
+                type="button"
+                data-country="Germany"
+                data-flag="https://flagcdn.com/w20/de.png"
+                aria-selected="true"
+              >
+                <img
+                  class="flags"
+                  src="https://flagcdn.com/w20/de.png"
+                  alt="Germany flag"
+                />
+                Germany
+              </button>
+            </li>
+            <li role="option">
+              <button
+                type="button"
+                data-country="United States"
+                data-flag="https://flagcdn.com/w20/us.png"
+                aria-selected="false"
+              >
+                <img
+                  class="flags"
+                  src="https://flagcdn.com/w20/us.png"
+                  alt="United States flag"
+                />
+                United States
+              </button>
+            </li>
+            <li role="option">
+              <button
+                type="button"
+                data-country="France"
+                data-flag="https://flagcdn.com/w20/fr.png"
+                aria-selected="false"
+              >
+                <img
+                  class="flags"
+                  src="https://flagcdn.com/w20/fr.png"
+                  alt="France flag"
+                />
+                France
+              </button>
+            </li>
+            <li role="option">
+              <button
+                type="button"
+                data-country="Japan"
+                data-flag="https://flagcdn.com/w20/jp.png"
+                aria-selected="false"
+              >
+                <img
+                  class="flags"
+                  src="https://flagcdn.com/w20/jp.png"
+                  alt="Japan flag"
+                />
+                Japan
+              </button>
+            </li>
+            <li role="option">
+              <button
+                type="button"
+                data-country="Brazil"
+                data-flag="https://flagcdn.com/w20/br.png"
+                aria-selected="false"
+              >
+                <img
+                  class="flags"
+                  src="https://flagcdn.com/w20/br.png"
+                  alt="Brazil flag"
+                />
+                Brazil
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BREADCRUMBS SECTION -->
+
+    <nav class="breadcrumbs" aria-label="breadcrumb">
+      <ol>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Clothings</a></li>
+        <li><a href="#">Men’s wear</a></li>
+        <li><a href="#">Summer clothing</a></li>
+      </ol>
+    </nav>
+
+    <!-- MAIN CONTENT SECTION -->
+    <div class="content-grid">
+      <aside class="sidebar">
+        <div class="categories-container">
+          <button class="toggle-btn fw-bold">
+            Categories
+            <img
+              class="arrow-img"
+              src="../images/icons/down.png"
+              alt="arrow-down"
+            />
+          </button>
+          <ul class="sidebar-ul">
+            <li><p>Mobile accessory</p></li>
+            <li><p>Electronics</p></li>
+            <li><p>Smartphones</p></li>
+            <li><p>Modern tech</p></li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </div>
+
+        <div class="brands-container">
+          <button class="toggle-btn fw-bold">
+            Brands
+            <img
+              class="arrow-img"
+              src="../images/icons/down.png"
+              alt="arrow-down"
+            />
+          </button>
+          <ul class="sidebar-ul">
+            <li><input type="checkbox" />Samsung</li>
+            <li><input type="checkbox" />Apple</li>
+            <li><input type="checkbox" />Huawei</li>
+            <li><input type="checkbox" />Pocco</li>
+            <li><input type="checkbox" />Lenovo</li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </div>
+
+        <div class="feature-container">
+          <button class="toggle-btn fw-bold">
+            Features
+            <img
+              class="arrow-img"
+              src="../images/icons/down.png"
+              alt="arrow-down"
+            />
+          </button>
+
+          <ul class="sidebar-ul">
+            <li><input type="checkbox" />Metallic</li>
+            <li><input type="checkbox" />Plastic cover</li>
+            <li><input type="checkbox" />8GB Ram</li>
+            <li><input type="checkbox" />Super power</li>
+            <li><input type="checkbox" />Large Memory</li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </div>
+        <div class="price-range-container">
+          <button class="toggle-btn fw-bold">
+            Price Range
+            <img
+              class="arrow-img"
+              src="../images/icons/down.png"
+              alt="arrow-down"
+            />
+          </button>
+          <div class="price-range">
+            <div class="slider-container">
+              <div class="slider"></div>
+              <div class="slider-progress"></div>
+              <input
+                type="range"
+                class="range-input min-range"
+                min="0"
+                max="999999"
+                value="0"
+              />
+              <input
+                type="range"
+                class="range-input max-range"
+                min="0"
+                max="999999"
+                value="999999"
+              />
+            </div>
+
+            <div class="inputs-container">
+              <div class="input-group">
+                <label for="min-price">Min</label>
+                <input
+                  type="number"
+                  id="min-price"
+                  class="min-input"
+                  value="0"
+                  min="0"
+                  max="999999"
+                />
+              </div>
+              <div class="input-group">
+                <label for="max-price">Max</label>
+                <input
+                  type="number"
+                  id="max-price"
+                  class="max-input"
+                  value="999999"
+                  min="0"
+                  max="999999"
+                />
+              </div>
+            </div>
+
+            <button class="apply-btn">Apply</button>
+          </div>
+        </div>
+        <div class="condition-container">
+          <button class="toggle-btn fw-bold">
+            Condition
+            <img
+              class="arrow-img"
+              src="../images/icons/down.png"
+              alt="arrow-down"
+            />
+          </button>
+          <ul class="sidebar-ul">
+            <li><input type="radio" name="condition-items" />Any</li>
+            <li><input type="radio" name="condition-items" />Refurbished</li>
+            <li><input type="radio" name="condition-items" />Brand new</li>
+            <li><input type="radio" name="condition-items" />Old items</li>
+          </ul>
+        </div>
+        <div class="ratings-container">
+          <button class="toggle-btn fw-bold">
+            Ratings
+            <img
+              class="arrow-img"
+              src="../images/icons/down.png"
+              alt="arrow-down"
+            />
+          </button>
+          <ul class="sidebar-ul">
+            <li>
+              <input type="radio" name="ratings" value="5-Star" />
+              <img src="../images/rating/Form/Misc/rating.png" alt />
+            </li>
+            <li>
+              <input type="radio" name="ratings" value="4-Star" /><img
+                src="../images/rating/Form/Misc/rating-1.png"
+                alt
+              />
+            </li>
+            <li>
+              <input type="radio" name="ratings" value="3-Star" /><img
+                src="../images/rating/Form/Misc/rating-2.png"
+                alt
+              />
+            </li>
+            <li>
+              <input type="radio" name="ratings" value="2-Star" /><img
+                src="../images/rating/Form/Misc/rating-3.png"
+                alt
+              />
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="content-top">
+        <div class="content-top-left">
+          <span
+            ><small>12,911 items in</small>
+            <strong>Mobile accessory</strong></span
+          >
+        </div>
+        <div class="content-top-right">
+          <section>
+            <input type="checkbox" />
+            <span>Verified Only</span>
+          </section>
+          <section class="featured-section">
+            <select>
+              <option value="popularity" selected>Popularity</option>
+              <option value="newest">Newest Arrivals</option>
+              <option value="price-low-high">Price: Low to High</option>
+              <option value="price-high-low">Price: High to Low</option>
+              <option value="discount">Highest Discount</option>
+            </select>
+          </section>
+          <section
+            class="d-flex align-items-center justify-content-around gap-2 page-linker"
+          >
+            <!-- <span> -->
+            <a href="./products-grid-view.html">
+              <img
+                src="../images/Button/Icon/control/gridview.png"
+                alt="gridview-img"
+              />
+            </a>
+            <!-- </span> -->
+            <!-- <span> -->
+            <a href="./products-list-view.html">
+              <img
+                src="../images/Button/Icon/control/listview.png"
+                alt="listview-img"
+              />
+            </a>
+            <!-- </span> -->
+          </section>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="filter-container d-flex gap-2"></div>
+
+        <div class="products-container">
+          <div class="product-item">
+            <div class="img-container">
+              <img src="../images/tech/1.jpg" alt="iPhone 14 Pro Red" />
+            </div>
+            <div class="details-container">
+              <p class="title">iPhone 14 Pro, Stunning Red, 256GB</p>
+              <div class="price-details">
+                <p class="current-price">$999.00</p>
+                <p class="old-price">$1099.00</p>
+              </div>
+              <div class="further-details">
+                <span class="d-flex align-items-center gap-2">
+                  <img src="../images/rating/rating.png" alt />
+                  <p class="orange">7.7</p>
+                </span>
+                <span>
+                  <p class="orders">111 orders</p>
+                </span>
+                <span>
+                  <p class="shipping">Free Shipping</p>
+                </span>
+              </div>
+              <p class="description">
+                Experience next-gen photography with the 48MP camera system.
+                Features A16 Bionic chip, stunning 6.1" Super Retina XDR
+                display, and all-day battery life in a beautiful red finish.
+              </p>
+              <button class="btn btn-primary">View details</button>
+            </div>
+            <div class="fav-container">
+              <span
+                ><img
+                  src="../images/fav-icon/favorite_border.png"
+                  alt
+                  class="fav-icon"
+              /></span>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="img-container">
+              <img
+                src="../images/tech/3.jpg"
+                alt="Samsung Galaxy S23 Ultra Black"
+              />
+            </div>
+            <div class="details-container">
+              <p class="title">
+                Samsung Galaxy S23 Ultra, Phantom Black, 512GB
+              </p>
+              <div class="price-details">
+                <p class="current-price">$1199.00</p>
+                <p class="old-price">$1299.00</p>
+              </div>
+              <div class="further-details">
+                <span class="d-flex align-items-center gap-2">
+                  <img src="../images/rating/rating.png" alt />
+                  <p class="orange">7.2</p>
+                </span>
+                <span>
+                  <p class="orders">224 orders</p>
+                </span>
+                <span>
+                  <p class="shipping">Free Shipping</p>
+                </span>
+              </div>
+              <p class="description">
+                Flagship Android phone with S-Pen functionality. Features a
+                200MP main camera, powerful Snapdragon 8 Gen 2 processor, and a
+                stunning 6.8" Dynamic AMOLED display.
+              </p>
+              <button class="btn btn-primary">View details</button>
+            </div>
+            <div class="fav-container">
+              <span
+                ><img
+                  src="../images/fav-icon/favorite_border.png"
+                  alt
+                  class="fav-icon"
+              /></span>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="img-container">
+              <img src="../images/tech/2.jpg" alt />
+            </div>
+            <div class="details-container">
+              <p class="title">Google Pixel 7 Pro, Hazel, 256GB</p>
+              <div class="price-details">
+                <p class="current-price">$899.00</p>
+                <p class="old-price">$999.00</p>
+              </div>
+              <div class="further-details">
+                <span class="d-flex align-items-center gap-2">
+                  <img src="../images/rating/rating.png" alt />
+                  <p class="orange">7.8</p>
+                </span>
+                <span>
+                  <p class="orders">84 orders</p>
+                </span>
+                <span>
+                  <p class="shipping">Free Shipping</p>
+                </span>
+              </div>
+              <p class="description">
+                Google's flagship with advanced AI photography features. Powered
+                by Google Tensor G2 chip, offering exceptional low-light photos
+                and smart features in an elegant hazel finish.
+              </p>
+              <button class="btn btn-primary">View details</button>
+            </div>
+            <div class="fav-container">
+              <span
+                ><img
+                  src="../images/fav-icon/favorite_border.png"
+                  alt
+                  class="fav-icon"
+              /></span>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="img-container">
+              <img src="../images/tech/7.jpg" alt="MacBook Pro 16" />
+            </div>
+            <div class="details-container">
+              <p class="title">MacBook Pro 16-inch, M2 Pro, Space Gray</p>
+              <div class="price-details">
+                <p class="current-price">$2499.00</p>
+                <p class="old-price">$2699.00</p>
+              </div>
+              <div class="further-details">
+                <span class="d-flex align-items-center gap-2">
+                  <img src="../images/rating/rating.png" alt />
+                  <p class="orange">6.9</p>
+                </span>
+                <span>
+                  <p class="orders">222 orders</p>
+                </span>
+                <span>
+                  <p class="shipping">Free Shipping</p>
+                </span>
+              </div>
+              <p class="description">
+                Professional-grade laptop with M2 Pro chip, delivering
+                exceptional performance for creative work. Features a stunning
+                16" Liquid Retina XDR display and up to 22 hours of battery
+                life.
+              </p>
+              <button class="btn btn-primary">View details</button>
+            </div>
+            <div class="fav-container">
+              <span
+                ><img
+                  src="../images/fav-icon/favorite_border.png"
+                  alt
+                  class="fav-icon"
+              /></span>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="img-container">
+              <img src="../images/tech/8.1.jpg" alt="Sony WH-1000XM4" />
+            </div>
+            <div class="details-container">
+              <p class="title">Apple Watch Series 8, GPS + Cellular, 45mm</p>
+
+              <div class="price-details">
+                <p class="current-price">$299.00</p>
+                <p class="old-price">$349.00</p>
+              </div>
+              <div class="further-details">
+                <span class="d-flex align-items-center gap-2">
+                  <img src="../images/rating/rating.png" alt />
+                  <p class="orange">7.3</p>
+                </span>
+                <span>
+                  <p class="orders">313 orders</p>
+                </span>
+                <span>
+                  <p class="shipping">Free Shipping</p>
+                </span>
+              </div>
+              <p class="description">
+                Advanced health monitoring with temperature sensing and crash
+                detection. Always-on Retina display, cellular connectivity, and
+                comprehensive fitness tracking features.
+              </p>
+              <button class="btn btn-primary">View details</button>
+            </div>
+            <div class="fav-container">
+              <span
+                ><img
+                  src="../images/fav-icon/favorite_border.png"
+                  alt
+                  class="fav-icon"
+              /></span>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="img-container">
+              <img src="../images/tech/9.jpg" alt="Apple Watch Series 8" />
+            </div>
+            <div class="details-container">
+              <p class="title">
+                Sony WH-1000XM4 Wireless Noise-Canceling Headphones
+              </p>
+              <div class="price-details">
+                <p class="current-price">$499.00</p>
+                <p class="old-price">$549.00</p>
+              </div>
+              <div class="further-details">
+                <span class="d-flex align-items-center gap-2">
+                  <img src="../images/rating/rating.png" alt />
+                  <p class="orange">7.1</p>
+                </span>
+                <span>
+                  <p class="orders">125 orders</p>
+                </span>
+                <span>
+                  <p class="shipping">Free Shipping</p>
+                </span>
+              </div>
+              <p class="description">
+                Industry-leading noise cancellation with premium sound quality.
+                Features multipoint connectivity, adaptive sound control, and up
+                to 30 hours of battery life.
+              </p>
+              <button class="btn btn-primary">View details</button>
+            </div>
+            <div class="fav-container">
+              <span
+                ><img
+                  src="../images/fav-icon/favorite_border.png"
+                  alt
+                  class="fav-icon"
+              /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGINATION  -->
+    <div
+      class="pagination-container d-flex align-items-center justify-content-around"
+    >
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- NEWSLETTER SECTION  -->
+
+    <div class="newletter-section">
+      <article
+        class="d-flex flex-column justify-content-center align-items-center"
+      >
+        <h3 class="text-center">Subscribe on our newsletter</h3>
+        <p class="text-center w-75">
+          Stay updated with the latest news and offers from our suppliers. Get
+          daily news on upcoming offers from many suppliers all over the world
+        </p>
+      </article>
+      <article>
+        <input type="email" placeholder="Email" />
+        <button class="btn btn-primary ml-4">Subscribe</button>
+      </article>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <div
+        class="footer-container d-flex flex-wrap justify-content-between align-items-center border-bottom"
+      >
+        <div class="col">
+          <section class="d-flex align-items-center">
+            <img src="../images/Extra/logo-symbol.png" alt="brand-logo" />
+            <h1 class="d-inline-block text-center" style="color: #8cb7f5">
+              Brand
+            </h1>
+          </section>
+          <section>
+            <p>
+              Best information about the company gies here but now lorem ipsum
+              is
+            </p>
+          </section>
+          <section>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="../images/social/facebook.png" alt="social-links"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../images/social/twitter.png" alt="social-links"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../images/social/linkedin.png" alt="social-links"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../images/social/insta.png" alt="social-links"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../images/social/youtube.png" alt="social-links"
+                /></a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="col">
+          <ul class="list-unstyled d-flex flex-column align-items-start gap-2">
+            <li class="black">About</li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Find Store</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul class="list-unstyled d-flex flex-column align-items-start gap-2">
+            <li class="black">Partnership</li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Find Store</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul class="list-unstyled d-flex flex-column align-items-start gap-2">
+            <li class="black">Information</li>
+            <li><a href="#">Help center</a></li>
+            <li><a href="#">Money Refund</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul class="list-unstyled d-flex flex-column align-items-start gap-2">
+            <li class="black">For users</li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">My orders</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul class="list-unstyled d-flex flex-column align-items-start">
+            <li class="black mb-">Get app</li>
+            <li><img src="../images/Misc/market-button.png" alt /></li>
+            <li><img src="../images/Misc/Group.png" alt /></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-down">
+        <span id="left">&copy; 2023 Ecommerce.</span>
+        <span id="right"
+          ><img src="../images/icons/up.png" alt /> English
+          <img class="flags" src="../images/flags/Property 1=US.png" alt="flag"
+        /></span>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/products-list-view.js"></script>
+    <script src="../js/products-grid-view.js"></script>
+  </body>
+</html>

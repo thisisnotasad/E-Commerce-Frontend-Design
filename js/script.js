@@ -244,3 +244,10 @@
   setupKeyboardNavigation(categoriesDropdown, categoriesList);
   setupKeyboardNavigation(helpDropdown, helpList);
 })();
+
+const navContainer = document.querySelector(".nav-links");
+const navCheck = document.querySelector(".nav-btn");
+
+navCheck.addEventListener("click", () => {
+  navContainer.classList.toggle("hide");
+});

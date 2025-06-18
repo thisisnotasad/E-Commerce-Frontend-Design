@@ -16,11 +16,11 @@
       type="image/png"
       sizes="any"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/Links-style.css">
   </head>
 
   <body>
-
     <!-- HEADER SECTION  -->
 
     <header>
@@ -69,6 +69,30 @@
         </nav>
       </div>
     </header>
+
+    <!-- NAVIGATION LIKNS  -->
+    <div>
+      <div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-menu">
+    <a href="/index.html">Home</a>
+    <a href="./pages/products-grid-view.html">Products</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+    <a href="#">More</a>
+  </div>
+</div>
+    </div>
 
     <!-- NAV SECTION  -->
 
@@ -489,7 +513,7 @@
       <div class="deals-offers">
         <div class="deals">
           <article>
-            <img src="./images/tech/8.jpg" alt="" />
+            <img src="./images/tech/8.png" alt="" />
           </article>
           <article>
             <span>Smart Watches</span>
@@ -569,7 +593,7 @@
           <span>
             <p class="product-name">Smart Watches</p>
             <p class="product-price">From USD 19</p> </span
-          ><span><img src="./images/tech/8.jpg" alt="" /></span>
+          ><span><img src="./images/tech/8.png" alt="" /></span>
         </div>
 
         <div class="product">
@@ -615,7 +639,7 @@
           <span>
             <p class="product-name">Smart watches</p>
             <p class="product-price">From USD 19</p> </span
-          ><span><img src="./images/tech/8.jpg" alt="" /></span>
+          ><span><img src="./images/tech/8.png" alt="" /></span>
         </div>
         <div class="product">
           <span>
@@ -640,7 +664,7 @@
           <span>
             <p class="product-name">Headphone set</p>
             <p class="product-price">From USD 100</p> </span
-          ><span><img src="./images/tech/8.jpg" alt="" /></span>
+          ><span><img src="./images/tech/9.jpg" alt="" /></span>
         </div>
         <div class="product">
           <span>
@@ -669,9 +693,9 @@
       <div class="inquiry-section">
         <div class="tagline-container">
           <div class="tagline">
-            <h2 class="fw-bold">
+            <h3 class="fw-bold">
               An easy way to send requests to all suppliers
-            </h2>
+            </h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt.
@@ -891,17 +915,71 @@
           </span>
         </div>
         <div class="country">
-          <span><img src="./images/flags/Property 1=AE.png" alt="" /></span>
+          <span>
+            <img
+              src="https://flagcdn.com/h20/pk.png"
+              srcset="
+                https://flagcdn.com/h40/pk.png 2x,
+                https://flagcdn.com/h60/jp.png 3x
+              "
+              height="20"
+              alt="Pakistan"
+            />
+          </span>
           <span class="country-info">
-            <p class="country-name">Arabic Emirates</p>
-            <p class="country-link">shopname.ae</p>
+            <p class="country-name">Pakistan</p>
+            <p class="country-link">Pakistan.pk</p>
           </span>
         </div>
         <div class="country">
-          <span><img src="./images/flags/Property 1=CN.png" alt="" /></span>
+          <span>
+            <img
+              src="https://flagcdn.com/h20/it.png"
+              srcset="
+                https://flagcdn.com/h40/it.png 2x,
+                https://flagcdn.com/h60/it.png 3x
+              "
+              height="20"
+              alt="Italy"
+            />
+          </span>
           <span class="country-info">
-            <p class="country-name">China</p>
-            <p class="country-link">shopname.ae</p>
+            <p class="country-name">Italy</p>
+            <p class="country-link">Italy.ae</p>
+          </span>
+        </div>
+        <div class="country">
+          <span>
+            <img
+              src="https://flagcdn.com/h20/jp.png"
+              srcset="
+                https://flagcdn.com/h40/jp.png 2x,
+                https://flagcdn.com/h60/jp.png 3x
+              "
+              height="20"
+              alt="Japan"
+            />
+          </span>
+          <span class="country-info">
+            <p class="country-name">Japan</p>
+            <p class="country-link">Japan.com</p>
+          </span>
+        </div>
+        <div class="country">
+          <span>
+            <img
+              src="https://flagcdn.com/h20/kr.png"
+              srcset="
+                https://flagcdn.com/h40/kr.png 2x,
+                https://flagcdn.com/h60/jp.png 3x
+              "
+              height="20"
+              alt="South Korea"
+            />
+          </span>
+          <span class="country-info">
+            <p class="country-name">South Korea</p>
+            <p class="country-link">south.korea.com.ck</p>
           </span>
         </div>
       </div>
@@ -913,15 +991,15 @@
       <article
         class="d-flex flex-column justify-content-center align-items-center"
       >
-        <h3>Subscribe on our newsletter</h3>
-        <p>
-          Get daily news on upcoming offers from many suppliers all over the
-          world
+        <h3 class="text-center">Subscribe on our newsletter</h3>
+        <p class="text-center w-75">
+          Stay updated with the latest news and offers from our suppliers. Get
+          daily news on upcoming offers from many suppliers all over the world
         </p>
       </article>
       <article>
         <input type="email" placeholder="Email" />
-        <button class="btn btn-primary">Subscribe</button>
+        <button class="btn btn-primary ml-4">Subscribe</button>
       </article>
     </div>
 
@@ -1032,6 +1110,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
