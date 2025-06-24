@@ -1,4 +1,12 @@
 const toggleBtn = document.querySelectorAll(".toggle-btn");
+const favBtns = document.querySelectorAll(".fav-container span");
+
+favBtns.forEach((favBtn) => {
+  favBtn.addEventListener("click", () => {
+    const product = favBtn.closest(".product-item");
+    console.log(product);
+  });
+});
 
 toggleBtn.forEach((btn) => {
   btn.addEventListener("click", () => {

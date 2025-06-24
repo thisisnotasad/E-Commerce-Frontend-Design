@@ -1,59 +1,96 @@
 # E-Commerce Frontend (Desktop)
 
-![Project Screenshot](./images/SS/image.png)
+![Project Screenshot](./images/SS/index-html.png)
 
 ## 📌 Overview
-Desktop-only implementation of an eCommerce site with:
-- Product listings
-- Shopping cart
-- Responsive header/footer
+
+A **desktop-optimized** eCommerce frontend featuring:
+
+- Product listings with view toggles
+- Interactive shopping cart
+- Responsive header/footer components
+- Utility pages (under-construction, 404)
+
+## 🌟 **Key Features**
+
+### 🛍️ Storefront
+
+- **Dual-view listings**: Grid/List toggle
+- **Product details**: Image gallery + specs
+- **Cart management**: Quantity adjustment, item removal
+
+---
+
+### 🛠️ Utilities
+
+- **Under-construction hub**: Redirects with alternative links
+- **404 page**: Branded error handling
+
+![Redirect Preview](./images/SS/redirect-hub-html.png)
 
 ## ✅ Progress Timeline
 
 ### Week 1: Header & Footer
+
 **Implemented**:
-- 🖥️ Desktop-optimized header with:
-  - Logo & search bar
-  - Navigation dropdowns
-- 📜 Multi-column footer with quick links
+
+- 🖥️ Desktop header with:
+  - Logo placement
+  - Search functionality
+  - Dropdown navigation
+- 📜 Footer with:
+  - Quick links
+  - Contact information
 - **Tech**: HTML5, CSS Flexbox
 
-![Project Screenshot](./images/SS/image-0.png)
-![Project Screenshot](./images/SS/image-0-1.png)
-![Project Screenshot](./images/SS/image-1.png)
-![Project Screenshot](./images/SS/image-2.png)
-![Project Screenshot](./images/SS/image-3.png)
+![Header Preview](./images/SS/index-html.png)
 
 ---
 
-### Week 2: Product Listing Page
-**New Features**:
-- 🔄 Toggle between grid and list views
-- 🔍 Filter sidebar (categories/price)
-- 🎨 Consistent card styling
+### Week 2: Product Views
 
+**Added**:
 
-![Project Screenshot](./images/SS/image-4.png)
-![Project Screenshot](./images/SS/image-5.png)
-![Project Screenshot](./images/SS/image-6.png)
-![Project Screenshot](./images/SS/image-7.png)
-![Project Screenshot](./images/SS/image-8.png)
-![Project Screenshot](./images/SS/image-9.png)
-![Project Screenshot](./images/SS/image-10.png)
-![Project Screenshot](./images/SS/image-11.png)
+- 🔄 View toggler (Grid ↔ List)
+- 🔍 Filter system:
+  - Category selection
+  - Price range slider
+- 🎨 Consistent product cards
 
-## 📅 Next Steps
--  Product detail pages
--  Shopping cart implementation
+![Grid View](./images/SS/products-grid-view-html.png)  
+![List View](./images/SS/products-list-view-html.png)
 
-## 🛠️ Tech Stack
-- HTML5
-- CSS3 (Flexbox/Grid)
-- JavaScript (Vanilla)
+---
+
+### Week 3: Cart & Product Details
+
+**Completed**:
+
+- 🛒 Cart functionality:
+  - Quantity +/- buttons
+  - Item removal
+- 📋 Product detail pages:
+  - Image zoom
+  - Specification tabs
+
+![Product Detail](./images/SS/products-detail-html.png)  
+![Shopping Cart](./images/SS/products-my-cart-html.png)
+
+## 🧰 Tech Stack
+
+| Component      | Technology                |
+| -------------- | ------------------------- |
+| Structure      | HTML5 (Semantic markup)   |
+| Styling        | CSS3 (Flexbox/Grid)       |
+| Interactivity  | Vanilla JavaScript (ES6+) |
+| Layout Helpers | Bootstrap (Minimal use)   |
 
 ## 🚀 Setup
+
 1. Clone repo:
+
 ```
    git clonehttps://github.com/thisisnotasad/E-Commerce-Frontend-Design.git
 ```
+
 2. Open `index.html` in a web browser.

@@ -1,0 +1,230 @@
+/* RESTYLE */
+.search-form {
+  display: none;
+}
+.header-container {
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.cart-container {
+  margin: 2rem auto;
+  max-width: 1180px;
+}
+
+/* PRODUCTS MY CART  */
+
+.cart-grid {
+  display: grid;
+  grid-template-columns: 860px 280px;
+  grid-template-rows: 10rem auto auto auto auto;
+  grid-template-areas:
+    "my-cart coupon-section"
+    "my-cart side-summary"
+    "my-cart side-summary"
+    "my-cart side-summary"
+    "below-cart below-cart";
+  gap: 1rem;
+}
+
+.my-cart {
+  grid-area: my-cart;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(222, 226, 231, 1);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 1);
+}
+
+.coupon-section {
+  grid-area: coupon-section;
+  border: 1px solid rgba(222, 226, 231, 1);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 1);
+  height: 10rem;
+}
+
+.side-summary {
+  grid-area: side-summary;
+  border: 1px solid rgba(222, 226, 231, 1);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 1);
+  height: fit-content;
+}
+
+.below-cart {
+  grid-area: below-cart;
+  border: 1px solid rgba(222, 226, 231, 1);
+  border-radius: 6px;
+  padding: 1.5rem;
+}
+
+/* CART PRODUCT STYLE  */
+
+.cart-item {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(222, 226, 231, 1);
+}
+
+.img-wrapper img {
+  width: 80px;
+  height: 80px;
+}
+.left-cart {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+.product-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.product-about {
+  width: 300px;
+}
+
+.right-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+input[type="number"] {
+  width: 123px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.btn-opt,
+.btn-more {
+  border: 1px solid rgba(222, 226, 231, 1);
+  border-radius: 6px;
+  text-align: center;
+  padding: 0.5rem;
+  height: auto;
+}
+
+.btn-opt:hover {
+  background-color: #f7f7f7;
+  border: 1px solid rgba(222, 226, 231, 1);
+}
+
+/* COUPON SECTION  */
+
+.apply-coupon {
+  width: 247px;
+  height: 40px;
+}
+
+.coupon-input {
+  width: 164px;
+  height: 40px;
+  border-radius: 6px !important;
+  border: 1px solid rgba(222, 226, 231, 1);
+
+  background: rgba(255, 255, 255, 1) !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.coupon-btn {
+  border: none;
+  outline: none;
+  text-align: center;
+  color: blue;
+  border: 1px solid rgba(222, 226, 231, 1);
+  background: rgba(255, 255, 255, 1);
+  border-radius: 6px;
+  border-bottom-left-radius: 0%;
+  border-top-left-radius: 0%;
+  padding: 0 1rem;
+}
+.coupon-btn:active {
+  color: #f7f7f7;
+  background: blue;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: none;
+  box-shadow: none;
+}
+
+/* SIDE SUMMARY STYLE - BILL */
+
+.checkout-btn {
+  background-color: #21a52c;
+  color: white;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+}
+
+.saved-products-container {
+  margin: 2rem auto;
+  max-width: 1180px;
+  border: 1px solid rgba(222, 226, 231, 1);
+  background: rgba(255, 255, 255, 1);
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.saved-products-wrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.saved-product {
+  padding: 0.5rem;
+  border: 1px solid rgba(222, 226, 231, 1);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  width: 270px;
+}
+
+.saved-product:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.move-to-cart-btn {
+  border: none;
+  outline: none;
+  border: 1px solid rgba(222, 226, 231, 1);
+  width: 100%;
+  border-radius: 6px;
+  padding: 1rem;
+  color: rgb(66, 80, 101);
+  transition: all 0.3s ease;
+}
+
+.move-to-cart-btn:hover {
+  background: #f7f7f7;
+  color: rgb(12, 14, 16);
+}
+.move-to-cart-btn:hover:active {
+  background: #171515;
+  color: rgb(255, 255, 255);
+}
+
+.flex-style {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}

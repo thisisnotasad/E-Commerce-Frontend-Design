@@ -99,9 +99,3 @@
 .hidden {
   display: none !important;
 }
-
-@media (max-width: 896px) {
-  .sidebar {
-    display: none;
-  }
-}

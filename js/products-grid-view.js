@@ -70,7 +70,6 @@ const addToFilterContainer = (itemText) => {
   // Append elements
   filterBtn.append(filterName, filterCross);
   filterContainer.appendChild(filterBtn);
-  updateFilterContainerVisibility();
 };
 
 listElements.forEach((li) => {
@@ -117,7 +116,6 @@ function removeFromFilterContainer(value) {
   );
   if (filterItem) {
     filterContainer.removeChild(filterItem);
-    updateFilterContainerVisibility();
   }
 }
 
@@ -126,33 +124,4 @@ function filtersExist() {
     const p = child.querySelector("p");
     return p && p.textContent.trim() !== "";
   });
-}
-
-function updateClearButtonVisibility() {
-  if (filtersExist()) {
-    clearFiltersBtn.classList.remove("hidden");
-  } else {
-    clearFiltersBtn.classList.add("hidden");
-  }
-}
-
-updateClearButtonVisibility();
-
-// JavaScript: toggle .hidden class on .filter-container depending on children presence
-function updateFilterContainerVisibility() {
-  const filterContainer = document.querySelector(".filter-container");
-  if (!filterContainer) return;
-
-  // Check element children count, ignore text nodes
-  const hasElementChildren = Array.from(filterContainer.childNodes).some(
-    (node) => node.nodeType === 1
-  );
-
-  console.log(hasElementChildren);
-
-  if (hasElementChildren) {
-    filterContainer.classList.remove("hidden");
-  } else {
-    filterContainer.classList.add("hidden");
-  }
 }
